@@ -1,0 +1,11 @@
+.app-container{
+    width: 68vw;
+    align-items: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+    padding: 20px;
+    border:1px solid black;
+    background-color: rgb(164, 191, 252);
+}

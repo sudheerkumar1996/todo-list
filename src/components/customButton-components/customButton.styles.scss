@@ -1,0 +1,37 @@
+.todo-button {
+  min-width: 80px;
+  width: auto;
+  height: 60px;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  padding: 0 35px 0 35px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: 'Open Sans Condensed';
+  font-weight: bolder;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  &.taskADD{
+    background-color: rgb(5, 82, 15);
+    color: white;
+  &:hover{
+       background-color: white;
+        color: black;
+        border: 1px solid black;
+      }
+  } 
+  &.inverted{
+    width:100px;
+    padding: 5px;
+    display: flex;
+    background-color: rgb(230, 241, 122);
+    color: black;
+    border: 0.1px solid rgb(10, 10, 9); 
+  &:hover{
+    background-color: rgb(247, 248, 241);
+    color: black;
+    border: 0.1px solid rgb(10, 10, 9);
+  }
+}
+  }

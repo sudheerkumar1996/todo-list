@@ -1,0 +1,19 @@
+.container{
+  .input-container {
+  input{
+    margin-right:20vw;
+    width: 40vw; 
+    padding: 20px;
+    font-size: 16px;
+    border: 2px solid black;
+    color: black;
+    outline: none;
+  }
+  .button-container{
+    right:18vw;
+    position: fixed;
+    display: flex;
+  }
+}
+}
+
