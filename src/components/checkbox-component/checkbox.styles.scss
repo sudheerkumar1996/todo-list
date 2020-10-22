@@ -1,9 +1,15 @@
 .checkbox-container{
-    width: 20px;
-    padding: 2px;
+    width: 30px;
+    padding: 10px;
     left:45px;
     right: 100px;
     position: relative;
     background-color: rgba(247, 207, 100, 0.856);
     margin: 2px;
+    input{
+            width: 20px;
+            height: 20px;
+            position: relative;
+            outline: 0.1px solid black;
+    }
 }

@@ -1,7 +1,8 @@
 .taskListContainer{
     width: 65vw;
-    border: 1px solid rgb(5, 112, 28);
+    border: 0.1px solid rgb(5, 112, 28);
     padding: 10px;
     margin: 0 auto;
     background-color: rgba(124, 245, 229, 0.911);  
+    display: flexbox;
 }

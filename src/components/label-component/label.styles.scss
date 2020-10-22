@@ -1,8 +1,15 @@
 .label-container{
-    width: 150px;
+    width: 15vw;
+    right: 90px;
+    height: auto;
+    margin-right: 10px;
+    color:black;
     border: none;
-    padding: 5px;
+    padding: 0.8vw;
     display: flex;
     position: relative;
-    background-color: rgba(241, 139, 173, 0.856);
+    background-color: rgba(247, 168, 194, 0.856);
+    font-family: "Arial";
+    text-align: left;
+    font-size: 20px;
 }
