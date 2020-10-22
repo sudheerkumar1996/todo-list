@@ -23,7 +23,9 @@
   } 
   &.inverted{
     width:100px;
-    padding: 5px;
+    padding: 4px;
+    justify-content: center;
+    text-align: center;
     display: flex;
     background-color: rgb(230, 241, 122);
     color: black;
