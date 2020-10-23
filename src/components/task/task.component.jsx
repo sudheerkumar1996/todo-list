@@ -8,7 +8,9 @@ class Task extends React.Component{
     const {id,name,status}=this.props;
     return(
       <div className='task-container' key={id}>
-      <div className='check-box'> <CheckBox/> </div>
+      <div className='check-box'> <CheckBox id={id} status={status} ischecked={this.props.ischecked}
+                                    onchange={this.props.onchange}/>
+       </div>
       <div className='Label'>  <CustomLabel name={name}/></div>  
       <div className='delete-button'>
               <CustomButton type='button' onClick={()=>this.props.deleteTask(id)} inverted>

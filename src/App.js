@@ -10,6 +10,7 @@ class App extends Component {
             task:[],
             count:0,
             currentTask:"",
+            ischecked:false
         }
     }
     handleChange = (event) => {
@@ -48,6 +49,18 @@ deleteTask=(itemId)=>{
       task:newTask
     });
 }
+onchange=(event)=>{
+  event.persist();
+  this.setState({
+    ischecked:event.target.checked
+  })
+  // if(this.state.ischecked){
+  //   let newTask;
+  //   this.setState({
+  //     task:newTask
+  //   },console.log(this.state.task));
+  // }
+}
 
   render(){
   return (
@@ -55,7 +68,12 @@ deleteTask=(itemId)=>{
     <Header/>
     <AddTaskContainer addItem={this.addItem} handleChange={this.handleChange} 
     currentTask={this.state.currentTask}/>
-    <TaskListContainer task={this.state.task} deleteTask={this.deleteTask}/>
+    <TaskListContainer 
+    task={this.state.task} 
+    deleteTask={this.deleteTask} 
+    ischecked={this.state.ischecked}
+    onchange={this.onchange}
+    />
     </div>
 
   );

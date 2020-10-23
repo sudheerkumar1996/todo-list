@@ -1,11 +1,8 @@
 .task-container{
     width: auto;
-    padding: 1px;
     position: relative;
-    margin: 10px;
     display: flex;
     &:hover {
-        padding: 5px;
         background-color: rgb(11, 83, 5);
         color: black;
         border: 0.1px solid black;
@@ -17,7 +14,7 @@
          padding: 5px;
       }
     .delete-button{
-        padding: 0.5pt;
+        padding: 5px;
         display: flex;
         position: absolute;
         right:1vw;

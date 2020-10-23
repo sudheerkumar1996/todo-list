@@ -13,6 +13,9 @@
   cursor: pointer;
   justify-content: center;
   &.taskADD{
+    width:100px;
+    padding: 4px;
+    display: flex;
     background-color: rgb(5, 82, 15);
     color: white;
   &:hover{
@@ -22,8 +25,8 @@
       }
   } 
   &.inverted{
-    width:100px;
-    padding: 4px;
+    width:90px;
+    height: 50px;
     justify-content: center;
     text-align: center;
     display: flex;

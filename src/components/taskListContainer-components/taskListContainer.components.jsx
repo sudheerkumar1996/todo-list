@@ -10,6 +10,8 @@ class TaskListContainer extends React.Component{
                  <div  key={item.id}>
                    <Task id={item.id} name={item.taskName} status={item.status}
                     deleteTask={this.props.deleteTask}
+                    ischecked={this.props.ischecked}
+                    onchange={this.props.onchange}
                    />
                    </div>
                 )}
