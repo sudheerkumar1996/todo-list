@@ -49,17 +49,12 @@ deleteTask=(itemId)=>{
       task:newTask
     });
 }
-onchange=(event)=>{
-  event.persist();
-  this.setState({
-    ischecked:event.target.checked
-  })
-  // if(this.state.ischecked){
-  //   let newTask;
-  //   this.setState({
-  //     task:newTask
-  //   },console.log(this.state.task));
-  // }
+onchange=(itemId,status)=>{
+const newTaskList=[...this.state.task];
+newTaskList[newTaskList.findIndex(obj=>obj.id===itemId)].status=status;
+this.setState({
+  task:newTaskList
+},console.log(this.state.task));
 }
 
   render(){

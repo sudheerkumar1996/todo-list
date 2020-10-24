@@ -3,17 +3,13 @@ import '../checkbox-component/checkbox.styles.scss';
 class CheckBox extends React.Component{
     render(){
         const status='checked'
+        const {id}=this.props;
         return(
             <div className='checkbox-container' >
                 <input type='checkbox'
-                  onChange={this.props.onchange} />    
+                  onChange={()=>this.props.onchange(id,status)} />    
             </div>
         );
     }
 }
-{/* <label htmlFor={id} className={todo.complete ? "active" : ""}>
-<input type="checkbox" id={id} checked={todo.complete}
-onChange={() => checkComplete(id)} />
-{todo.name}
-</label> */}
 export default CheckBox;
