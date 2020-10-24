@@ -9,7 +9,7 @@ class App extends Component {
         this.state={
             task:[],
             count:0,
-            currentTask:""
+            currentTask:"",
         }
     }
     handleChange = (event) => {
@@ -36,7 +36,12 @@ class App extends Component {
             currentTask:""
           },console.log(this.state.task));
 }
-deleteTask=(itemId)=>{
+deleteTask=(itemId,itemStatus)=>{
+  const newTaskThree=[...this.state.task];
+  newTaskThree[newTaskThree.findIndex(obj=>obj.id===itemId)].status=itemStatus;
+  this.setState({
+    task:newTaskThree
+},console.log(this.state.task)); 
   const newTask=this.state.task.filter(task=>
     task.id!==itemId);
     this.setState({
@@ -50,7 +55,6 @@ this.setState({
   task:newTaskList
 },console.log(this.state.task));
 }
-
   render(){
   return (
     <div className='app-container'>
@@ -63,9 +67,7 @@ this.setState({
     onchange={this.onchange}
     />
     </div>
-
   );
   }
 }
-
 export default App;

@@ -1,15 +1,20 @@
-.checkbox-container{
-    width: 30px;
-    padding: 8.5px;
+.checkbox{
+    background-color: rgb(252, 222, 168);
+    border:none;
+    padding: 8px;
     left:10px;
     right: 90px;
     position: relative;
-    background-color: rgba(247, 207, 100, 0.856);
+    display: flex;
     margin: 2px;
     input{
             width: 20px;
-            height: 20px;
-            position: relative;
-            outline: 0.1px solid black;
+            height: 20px;  
     }
+    input[type=checkbox]:checked +label {
+        border: none;
+        background-color: transparent;
+        color:rgb(158, 152, 152);
+        text-decoration: line-through;
+      }
 }

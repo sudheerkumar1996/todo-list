@@ -1,8 +1,11 @@
 import React from 'react';
 import '../label-component/label.styles.scss';
-const CustomLabel =({name})=>(
-    <div className='label-container'>
-            <label>{name}</label> 
-    </div> 
-);
+class  CustomLabel extends React.Component{
+    render(){
+         const {name}=this.props;
+        return(
+            <label className='Label' >{name}</label>      
+        );
+    }
+}
 export default CustomLabel;

@@ -2,36 +2,6 @@ import React from 'react';
 import '../input-components/input.styles.scss';
 import  CustomButton from '../customButton-components/customButton.components';
 class InputTask extends React.Component {
-//     constructor(props){
-//         super(props);
-//         this.state={
-//             task:[],
-//             count:0,
-//             currentTask:"",
-
-//         }
-//     }
-//     handleChange = (event) => {
-//         event.persist();
-//         this.setState({
-//           currentTask: event.target.value,
-//         });
-//       };
-
-//     addItem = (event) => {
-//         event.preventDefault();
-//         let taskObject={
-//             id:this.state.count+1,
-//             taskName:this.state.currentTask,
-//             status:'pending'
-//         }
-//         // this.setState({count:taskObject.id});
-//         this.setState({
-//             task:taskObject,
-//             count:taskObject.id
-//           },console.log(this.state.task));
-// }
-
 render(){
         return(
         <div className='container'>
@@ -46,8 +16,7 @@ render(){
                                         <CustomButton type='submit'  taskADD>
                                                  Add Task
                                          </CustomButton>
-                                </div>
-                               
+                                </div> 
                         </div>
                 </form> 
         </div>

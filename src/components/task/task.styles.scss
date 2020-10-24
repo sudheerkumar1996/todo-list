@@ -3,18 +3,15 @@
     position: relative;
     display: flex;
     &:hover {
-        background-color: rgb(11, 83, 5);
+        background-color: rgb(52, 105, 47);
         color: black;
         border: 0.1px solid black;
       }
       .check-box{
           padding: 5px;
       }
-      .Label{
-         padding: 5px;
-      }
     .delete-button{
-        padding: 5px;
+        padding: 3px;
         display: flex;
         position: absolute;
         right:1vw;
