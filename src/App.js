@@ -9,8 +9,7 @@ class App extends Component {
         this.state={
             task:[],
             count:0,
-            currentTask:"",
-            ischecked:false
+            currentTask:""
         }
     }
     handleChange = (event) => {
@@ -37,11 +36,6 @@ class App extends Component {
             currentTask:""
           },console.log(this.state.task));
 }
-// statechange=(event)=>{
-//   this.setState({
-
-//   })
-// }
 deleteTask=(itemId)=>{
   const newTask=this.state.task.filter(task=>
     task.id!==itemId);
@@ -66,7 +60,6 @@ this.setState({
     <TaskListContainer 
     task={this.state.task} 
     deleteTask={this.deleteTask} 
-    ischecked={this.state.ischecked}
     onchange={this.onchange}
     />
     </div>
